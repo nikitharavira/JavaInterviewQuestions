@@ -1,0 +1,58 @@
+1.What is difference in Overloading and Over riding
+Ans:Method Overloading is a Compile time polymorphism. In method overloading, more than one method shares the same method name with a different signature in the class. In method overloading, the return type can or can not be the same, but we have to change the parameter because, in java, we can not achieve the method overloading by changing only the return type of the method. 
+    Method Overriding is a Run time polymorphism. In method overriding, the derived class provides the specific implementation of the method that is already provided by the base class or parent class. In method overriding, the return type must be the same or co-variant (return type may vary in the same direction as the derived class). 
+2.If both the functions are static can we over ride
+Ans:No, we cannot override static methods because method overriding is based on dynamic binding at runtime and the static methods are bonded using static binding at compile time.
+3.Diffference bew Final , Finally and Finalize
+Ans:final is the keyword and access modifier which is used to apply restrictions on a class, method or variable.
+    finally is the block in Java Exception Handling to execute the important code whether the exception occurs or not.
+    finalize is the method in Java which is used to perform clean up processing just before object is garbage collected.
+4.What are maker Interfaces
+Ans:It is an empty interface (no field or methods). Examples of marker interface are Serializable, Cloneable and Remote interface. All these interfaces are empty interfaces.
+5.What is Singleton class
+Ans:Singleton class is a class that can have only one object (an instance of the class) at a time. After the first time, if we try to instantiate the Singleton class, the new variable also points to the first instance created. So whatever modifications we do to any variable inside the class through any instance, affects the variable of the single instance created and is visible if we access that variable through any variable of that class type defined. 
+6.What is the underlying Data structure for Arraylist and Linkedlist
+Ans:ArrayList and LinkedList are two different implementations of the List interface. ArrayList is a resizable-array implementation, whereas LinkedList is a Doubly-linked list implementation of the List interface.
+7.What is hash collection
+Ans:Hashing is the process of mapping the data to some representative integer value using the concept of hashing algorithms. In Java, a hash code is an integer value that is linked with each object. Hashing finds its data structure implementation in HashTables and HashMaps.
+8.What are lambda Expressions
+Ans:Lambda expression is a new and important feature of Java which was included in Java SE 8. It provides a clear and concise way to represent one method interface using an expression. It is very useful in collection library. It helps to iterate, filter and extract data from collection.
+9.Whats is functional interface
+Ans:A functional interface is an interface that contains only one abstract method. They can have only one functionality to exhibit. 
+10.What are optional classes in Java 8
+Ans:Optional is a container object used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as 'available' or 'not available' instead of checking null values.
+11.Whats is factory design pattern and Adapter and difference bew them
+Ans:Factory Method: Define an interface for creating an object, but let the subclasses decide which class to instantiate. The Factory method lets a class defer instantiation to subclasses
+    Abstract Factory: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+12.What are Solid principles
+Ans:These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows. Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
+SOLID stands for:
+S - Single-responsiblity Principle
+O - Open-closed Principle
+L - Liskov Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+13. What does @component and @scan do in Sprinboot annaotation
+Ans:@ComponentScan annotation along with the @Configuration annotation to specify the packages that we want to be scanned. @ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages.
+14.Whats is the Diference bew JPA , Hibernate and ORM
+Ans:Java Persistence API (JPA) defines the management of relational data in the Java applications. Hibernate is an Object-Relational Mapping (ORM) tool which is used to save the state of Java object into the database. It is just a specification. Various ORM tools implement it for data persistence.
+15.What is indexing in Database
+Ans:Indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed.
+16.What are 4 types of Drivers in Jdbc
+Ans:DBC drivers are client-side adapters (installed on the client machine, not on the server) that convert requests from Java programs to a protocol that the DBMS can understand. There are 4 types of JDBC drivers:
+Type-1 driver or JDBC-ODBC bridge driver
+Type-2 driver or Native-API driver
+Type-3 driver or Network Protocol driver
+Type-4 driver or Thin driver
+17.What is difrence bew @component and @bean and @service
+Ans:@Component auto detects and configures the beans using classpath scanning whereas
+    @Bean explicitly declares a single bean, rather than letting Spring do it automatically.
+     @Service annotation is used with classes that provide some business functionalities.    
+18.What is difference bew SOAP and restful services techinically
+Ans:SOAP (Simple Object Access Protocol) is an XML-based protocol for accessing web services over HTTP. It is developed as an intermediate language so that applications built in various programming languages can communicate with each other effectively
+    REST (Representational State Transfer) is an architectural approach for communication purposes often used in various web services development. It is a stateless client-server model. Web services that are defined on the concept of REST are RESTful web services
+19.Difference in POST and PUT
+Ans:PUT method is call when you have to modify a single resource, which is already a part of resource collection
+    POST method is call when you have to add a child resource under resources collection.
+20.IS react uni directional or Bi directional
+Ans:React doesn't support bi-directional binding t
